@@ -1,0 +1,56 @@
+body{
+    background-image: url(gradient.jpg);
+    background-size: cover;
+}
+
+h1{
+    outline-color: black;
+    color:aliceblue;
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+    font-style: normal;
+    font-family: fantasy;
+}
+
+h2{
+    outline-color: black;
+    color:aliceblue;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    font-family:fantasy;
+}
+
+
+input{
+    background-color:#00b3b3;
+    border: none;
+    padding: 5px;
+    color: #ffffff;
+    float:right;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    cursor: pointer;
+}
+table{
+    border-collapse: collapse;
+    border:2px solid black;
+}
+
+td{
+    border:2px solid black;
+    padding: 5px;
+    align-content: stretch;
+    
+}
+td:hover{background-color:#ffffff;
+        opacity: 0.6;
+        }
+textarea{
+    background-color: transparent;
+    border:none;
+}
