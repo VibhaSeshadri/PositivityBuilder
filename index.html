@@ -3,19 +3,21 @@
     <head>
         <title>Positivity Builder</title>
         <link rel="stylesheet" href="main.css">
+        <!--<script src = "myScript.js"></script>-->
     </head>
     
     <body>
-    
-        <h1>My Positivity Builder</h1>
-        <h2>Use the template below to track your positive thoughts and reflect!</h2>
+        <h1>Positivity Repository</h1>
+        <h2>Enter a positive thought below!</h2>
+        
 
         <table align="center">
             <tr>
                 <td>
-                    <form name="positiveForm" action="" method="post">
-                         <textarea name="pThought" rows="10" cols="30" wrap="physical">Enter Positive Thought Here...</textarea>
-                         <input type="submit" value="Submit">
+                    <form name="positiveForm" action="https://docs.google.com/spreadsheets/d/1AqqZPr3VJ3c0ijuaFAE7E9HnX-ZKlXNMuvmck9kYgfc/edit?usp=sharing" method="post">
+                        <input name="thought" type = "text" size = "50">
+                        <input type="submit" value="Submit" name="send" id = "button">
+                        
                     </form>
                 </td>
             </tr>

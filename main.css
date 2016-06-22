@@ -24,7 +24,7 @@ h2{
 }
 
 
-input{
+#button{
     background-color:#00b3b3;
     border: none;
     padding: 5px;
@@ -35,22 +35,18 @@ input{
     display: inline-block;
     font-size: 8px;
     cursor: pointer;
+    margin-left: 10px;
 }
 table{
     border-collapse: collapse;
-    border:2px solid black;
+    border:none;
 }
 
 td{
-    border:2px solid black;
+    border:none;
     padding: 5px;
     align-content: stretch;
     
 }
-td:hover{background-color:#ffffff;
-        opacity: 0.6;
-        }
-textarea{
-    background-color: transparent;
-    border:none;
-}
+
+
