@@ -1,28 +1,24 @@
-src = "https://docs.google.com/spreadsheets/d/1AqqZPr3VJ3c0ijuaFAE7E9HnX-ZKlXNMuvmck9kYgfc/edit?usp=sharing";
-
-var message;
-function sendToSheets() {
-    "use strict"
-    message = document.getElementById("pThought");
-    
-};
-
-convertTOGeoJSON = function(spreadsheetData){
-    var geoJSON = {
-        thoughts:[]
-    };
-    var thought = {
-        properties:{
-            thought: message,
-        }
+function replayPositivity() {
         
-    };
-};
-
-geoJSON.thoughs.post(thought);
-
-$document.ready(function(){
-    key: '1AqqZPr3VJ3c0ijuaFAE7E9HnX-ZKlXNMuvmck9kYgfc',
-    callback:convertTOGeoJSON,
-    simpleSheet:true
+        var thought = document.getElementById("thought").value;
+        document.getElementById("thought").value = "";
+        document.getElementById("output").innerHTML = "I positively, absolutely believe that " + thought;
 }
+
+function replayNegativity(){
+    var nThought = document.getElementById("thought").value;
+    document.getElementById("thought").value = "";
+    document.getElementById("nOutput").innerHTML = "Your belief \"" + nThought + "\" hindered you, so why bother believing it?";
+}
+    
+     
+function refresh(){
+    var rThought = document.getElementById("thought").value;
+    document.getElementById("thought").value = "";
+    document.getElementById("rOutput").innerHTML = "Stick to you resolution \"" + rThought + "\" .";
+    
+}
+
+
+
+

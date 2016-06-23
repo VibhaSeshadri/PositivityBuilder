@@ -23,8 +23,19 @@ h2{
     font-family:fantasy;
 }
 
+h3{
+    outline-color: black;
+    color:aliceblue;
+    font-size: 1.2em;
+    position: relative;
+    text-align: right;
+    margin-right: 100px;
+    font-style: italic;
+    font-family:fantasy;  
+}
 
-#button{
+
+button{
     background-color:#00b3b3;
     border: none;
     padding: 5px;
@@ -45,8 +56,16 @@ table{
 td{
     border:none;
     padding: 5px;
-    align-content: stretch;
-    
+    align-content: stretch; 
+}
+
+p{
+    outline-color: black;
+    color:aliceblue;
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    font-family:fantasy;
 }
 
 

@@ -3,26 +3,29 @@
     <head>
         <title>Positivity Builder</title>
         <link rel="stylesheet" href="main.css">
-        <!--<script src = "myScript.js"></script>-->
+        <script src = "myScript.js"></script>
     </head>
     
     <body>
-        <h1>Positivity Repository</h1>
-        <h2>Enter a positive thought below!</h2>
+        <h1>Positively Worth It</h1>
+        <h2>"We cannot change what we are not aware of, and once we are aware, we cannot help but change."</h2>
+        <h3>~ Sheryl Sandberg</h3>
         
 
         <table align="center">
             <tr>
                 <td>
-                    <form name="positiveForm" action="https://docs.google.com/spreadsheets/d/1AqqZPr3VJ3c0ijuaFAE7E9HnX-ZKlXNMuvmck9kYgfc/edit?usp=sharing" method="post">
-                        <input name="thought" type = "text" size = "50">
-                        <input type="submit" value="Submit" name="send" id = "button">
-                        
-                    </form>
+                    <textarea name="thought" wrap = "hard" rows = "5" cols = "50" id = "thought" placeholder="Type a positive thought you had today and hit submit. Then type a negative thought you had today and hit change. Finally enter a resolution to counteract this negative thought and hit refresh. Do this once a day for best results."></textarea>
+                    <button id = "b3" onclick="refresh()">refresh </button>
+                    <button id = "b2" onclick="replayNegativity()">change </button>
+                    <button id = "b1" onclick="replayPositivity()">submit </button> 
+                    
                 </td>
             </tr>
         </table>
-        
+        <p id="output"></p>
+        <p id = "nOutput"></p>
+        <p id = "rOutput"></p>
     </body>
     
 </html>
